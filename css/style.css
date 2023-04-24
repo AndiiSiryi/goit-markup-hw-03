@@ -1,0 +1,179 @@
+/* Color */
+:root {
+  --main-background-color: #ffffff;
+  --footer-beckgrond-color: #2e2f42;
+  --text-footer-section-color: #f4f4fd;
+  --hover-focus-color: #404bbf;
+  --title-color: #2e2f42;
+  --text-color: #434455;
+  --hairlines-button-color: #e7e9fc;
+  --blue-text-color: #4d5ae5;
+}
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+body {
+  font-family: "Roboto", sans-serif;
+
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+/* Logo */
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: var(--blue-text-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.logo-title {
+  color: var(--title-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+/* Menu navigation */
+.site-nav .link {
+  color: var(--title-color);
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--hover-focus-color);
+}
+.but {
+  color: var(--title-color);
+}
+/* .site-nav.list .link.but {
+  color: var(--hover-focus-color);
+} */
+/* Contacts */
+.add {
+  font-style: normal;
+}
+.contact {
+  color: var(--text-color);
+  text-decoration: none;
+  line-height: 1.5;
+}
+.list .contact:hover,
+.list .contact:focus {
+  color: var(--hover-focus-color);
+}
+/* hero section */
+.hero {
+  background-color: var(--footer-beckgrond-color);
+}
+.hero-title {
+  color: var(--main-background-color);
+
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.section.team {
+  background-color: var(--text-footer-section-color);
+}
+.section-title {
+  color: var(--title-color);
+
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.list-team {
+  background-color: var(--main-background-color);
+}
+
+.section-qualities,
+.section-name {
+  color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.section-text {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.transform {
+  text-transform: capitalize;
+}
+/* button */
+.button {
+  color: var(--main-background-color);
+  background-color: var(--blue-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--hover-focus-color);
+}
+.footer {
+  background-color: var(--footer-beckgrond-color);
+}
+.footer-text {
+  color: var(--text-footer-section-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.logo-cloud {
+  color: var(--text-footer-section-color);
+}
+/* Стилі Portfolio */
+.section .work-button {
+  color: var(--blue-text-color);
+  background-color: var(--text-footer-section-color);
+  border: 1px solid var(--hairlines-button-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.section .work-button:hover,
+.section .work-button:focus {
+  color: var(--main-background-color);
+  background-color: var(--hover-focus-color);
+}
+.work-title {
+  color: var(--title-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
