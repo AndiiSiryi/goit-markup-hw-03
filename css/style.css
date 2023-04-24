@@ -10,6 +10,18 @@
   --blue-text-color: #4d5ae5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 body {
@@ -20,6 +32,14 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
 }
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+  padding: 0 15px;
+}
+
 /* Logo */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -41,6 +61,11 @@ body {
 .list {
   list-style: none;
 }
+/* Page header */
+.page-header {
+  background-color: var(--main-background-color);
+}
+
 /* Menu navigation */
 .site-nav .link {
   color: var(--title-color);
@@ -76,14 +101,23 @@ body {
 /* hero section */
 .hero {
   background-color: var(--footer-beckgrond-color);
+  text-align: center;
+  margin-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   color: var(--main-background-color);
 
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
+
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
 }
 
 .section.team {
@@ -96,6 +130,8 @@ body {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
+
+  margin-bottom: 72px;
 }
 .list-team {
   background-color: var(--main-background-color);
@@ -109,8 +145,20 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
 
+  margin-bottom: 8px;
+}
+.section.qua {
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  margin-bottom: 120px;
+}
+.section.doing {
+  margin-bottom: 120px;
+}
+.section-title.transform {
+  padding-top: 120px;
+}
 .section-text {
   color: var(--text-color);
   font-weight: 400;
@@ -127,6 +175,8 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  padding: 16px 32px;
+  display: inline-block;
 
   font-family: inherit;
   font-weight: 500;
@@ -157,6 +207,7 @@ body {
   border: 1px solid var(--hairlines-button-color);
   border-radius: 4px;
   cursor: pointer;
+  padding: 12px 24px;
 
   font-family: inherit;
   font-weight: 500;
