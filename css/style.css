@@ -10,6 +10,7 @@
   --blue-text-color: #4d5ae5;
 }
 
+/* Утіліти */
 h1,
 h2,
 h3,
@@ -22,8 +23,18 @@ p {
   padding: 0;
 }
 
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.transform {
+  text-transform: capitalize;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 
@@ -32,12 +43,19 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
 }
-
+/* параметри контейнера */
 .container {
   width: 1158px;
   margin: 0 auto;
   outline: 1px solid tomato;
   padding: 0 15px;
+}
+
+/* Хедер */
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 /* Logo */
@@ -58,9 +76,6 @@ body {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-}
 /* Page header */
 .page-header {
   background-color: var(--main-background-color);
@@ -68,13 +83,25 @@ body {
 
 /* Menu navigation */
 .site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--title-color);
   text-decoration: none;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 76px;
+}
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--hover-focus-color);
@@ -82,12 +109,16 @@ body {
 .but {
   color: var(--title-color);
 }
-/* .site-nav.list .link.but {
-  color: var(--hover-focus-color);
-} */
+
 /* Contacts */
+.list .item + .item {
+  margin-left: 40px;
+}
 .add {
   font-style: normal;
+}
+.list.contact-list {
+  display: flex;
 }
 .contact {
   color: var(--text-color);
@@ -120,9 +151,31 @@ body {
   width: 496px;
 }
 
-.section.team {
-  background-color: var(--text-footer-section-color);
-  padding-bottom: 120px;
+/* button */
+.button {
+  display: inline-block;
+  padding: 16px 32px;
+
+  color: var(--main-background-color);
+  background-color: var(--blue-text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--hover-focus-color);
+}
+
+/* Our qualities section */
+
+.section.qua {
   padding-top: 120px;
 }
 .section-title {
@@ -135,9 +188,45 @@ body {
 
   margin-bottom: 72px;
 }
-.list-team {
-  background-color: var(--main-background-color);
+.section-text {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.5;
 }
+
+.list.qua {
+  display: flex;
+  gap: 24px;
+}
+
+.list.qua .item {
+  width: 264px;
+  margin: 0;
+}
+/* What are we doing */
+.section.doing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.list.doing {
+  display: flex;
+  gap: 24px;
+}
+.list.doing .item {
+  margin: 0;
+  width: calc((100% - 48px) / 3);
+}
+
+/* Our Team section */
+.section.team {
+  background-color: var(--text-footer-section-color);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+/* .list-item {
+  background-color: var(--main-background-color);
+} */
 
 .section-qualities,
 .section-name {
@@ -150,45 +239,26 @@ body {
 
   margin-bottom: 8px;
 }
-.section.qua {
-  padding-top: 120px;
-}
-.section.doing {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-/* .section-title.transform {
-  padding-top: 120px;
-} */
-.section-text {
-  color: var(--text-color);
-  font-weight: 400;
-  line-height: 1.5;
+
+.team-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
 }
 
-.transform {
-  text-transform: capitalize;
+.list.team {
+  display: flex;
+  gap: 24px;
 }
-/* button */
-.button {
-  color: var(--main-background-color);
-  background-color: var(--blue-text-color);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 16px 32px;
-  display: inline-block;
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+.list.team .item {
+  width: 264px;
+  margin: 0;
+  background-color: var(--main-background-color);
+  width: calc((100% - 72px) / 4);
 }
-.hero .button:hover,
-.hero .button:focus {
-  background-color: var(--hover-focus-color);
-}
+/* footer */
 .footer {
   background-color: var(--footer-beckgrond-color);
   padding-top: 100px;
@@ -204,7 +274,7 @@ body {
 .logo-cloud {
   color: var(--text-footer-section-color);
 }
-.logo.link {
+footer .logo.link {
   display: inline-block;
   margin-bottom: 17.5px;
 }
