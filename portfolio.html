@@ -19,30 +19,33 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <header class="page-header">
+    <header class="page-header">
       <!-- Logo -->
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
           <a class="logo link" href="./index.html"
             >Web<span class="logo-title">Studio</span></a
           >
           <!-- Menu navigation -->
           <ul class="site-nav list">
-            <li><a class="link but" href="./index.html">Studio</a></li>
-            <li><a class="link but" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="link but" href="">Contacts</a></li>
+            <li class="item">
+              <a class="link but" href="./index.html">Studio</a>
+            </li>
+            <li class="item">
+              <a class="link but" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item"><a class="link but" href="">Contacts</a></li>
           </ul>
         </nav>
         <!-- Contacts -->
         <address class="add">
-          <ul class="list">
-            <li>
+          <ul class="list contact-list">
+            <li class="item">
               <a class="link contact" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a class="link contact" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -55,135 +58,153 @@
       <!-- Our works -->
       <section class="section portfolio">
         <div class="container">
-        <h1 hidden class="work section-title">Our works</h1>
-        <ul class="list btn">
-          <li><button type="button" class="link work-button">All</button></li>
-          <li>
-            <button type="button" class="link work-button">Web Site</button>
-          </li>
-          <li><button type="button" class="link work-button">App</button></li>
-          <li>
-            <button type="button" class="link work-button">Design</button>
-          </li>
-          <li>
-            <button type="button" class="link work-button">Marketing</button>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/banking-app.jpg"
-                alt="banking app"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Banking App Interface Concept</h2>
-              <p class="section-text">App</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/cashless-payment.jpg"
-                alt="terminal and phone"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Cashless Payment</h2>
-              <p class="section-text">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/meditation-app.jpg"
-                alt="laptop and phone"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Meditation App</h2>
-              <p class="section-text">App</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/taxi-service.jpg"
-                alt="hands on the wheel"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Taxi Service</h2>
-              <p class="section-text">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/screen-illustrations.jpg"
-                alt="phone and four pictures"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Screen Illustrations</h2>
-              <p class="section-text">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/online-courses.jpg"
-                alt="girl looks at the phone"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Online Courses</h2>
-              <p class="section-text">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/instagram-stories-concept.jpg"
-                alt="cards with photos of people and text"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Instagram Stories Concept</h2>
-              <p class="section-text">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/organic-food.jpg"
-                alt="bag of fruit"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Organic Food</h2>
-              <p class="section-text">Web Site</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/fresh-coffee.jpg"
-                alt="cup of coffee"
-                width="360"
-                height="300"
-              />
-              <h2 class="work-title">Fresh Coffee</h2>
-              <p class="section-text">Web Site</p></a
-            >
-          </li>
-        </ul>
+          <h1 hidden class="work section-title">Our works</h1>
+          <ul class="list btn">
+            <li><button type="button" class="link work-button">All</button></li>
+            <li>
+              <button type="button" class="link work-button">Web Site</button>
+            </li>
+            <li><button type="button" class="link work-button">App</button></li>
+            <li>
+              <button type="button" class="link work-button">Design</button>
+            </li>
+            <li>
+              <button type="button" class="link work-button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="list examples">
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/banking-app.jpg"
+                  alt="banking app"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Banking App Interface Concept</h2>
+                  <p class="section-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/cashless-payment.jpg"
+                  alt="terminal and phone"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Cashless Payment</h2>
+                  <p class="section-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/meditation-app.jpg"
+                  alt="laptop and phone"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Meditation App</h2>
+                  <p class="section-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/taxi-service.jpg"
+                  alt="hands on the wheel"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Taxi Service</h2>
+                  <p class="section-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/screen-illustrations.jpg"
+                  alt="phone and four pictures"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Screen Illustrations</h2>
+                  <p class="section-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/online-courses.jpg"
+                  alt="girl looks at the phone"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Online Courses</h2>
+                  <p class="section-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/instagram-stories-concept.jpg"
+                  alt="cards with photos of people and text"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Instagram Stories Concept</h2>
+                  <p class="section-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/organic-food.jpg"
+                  alt="bag of fruit"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Organic Food</h2>
+                  <p class="section-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-work">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/fresh-coffee.jpg"
+                  alt="cup of coffee"
+                  width="360"
+                  height="300"
+                />
+                <div class="work-container">
+                  <h2 class="work-title">Fresh Coffee</h2>
+                  <p class="section-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-       <div class="container">
+      <div class="container">
         <a class="logo link" href="./index.html"
           >Web
           <span class="logo-cloud">Studio</span>
