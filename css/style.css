@@ -47,7 +47,7 @@ body {
 .container {
   width: 1158px;
   margin: 0 auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   padding: 0 15px;
 }
 
@@ -224,10 +224,6 @@ body {
   padding-bottom: 120px;
   padding-top: 120px;
 }
-
-/* .list-item {
-  background-color: var(--main-background-color);
-} */
 
 .section-qualities,
 .section-name {
