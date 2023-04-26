@@ -174,7 +174,7 @@ body {
 /* Our qualities section */
 
 .section.qua {
-  padding-top: 120px 0;
+  padding: 120px 0;
 }
 .section-title {
   color: var(--title-color);
