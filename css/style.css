@@ -190,7 +190,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .section.qua {
   padding: 120px 0;
 }
@@ -241,7 +240,6 @@ body {
   padding-bottom: 120px;
   padding-top: 120px;
 }
-
 .section-qualities,
 .section-name {
   color: var(--title-color);
@@ -253,7 +251,6 @@ body {
 
   margin-bottom: 8px;
 }
-
 .team-container {
   padding-top: 32px;
   padding-bottom: 32px;
