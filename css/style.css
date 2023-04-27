@@ -10,7 +10,7 @@
   --blue-text-color: #4d5ae5;
 }
 
-/* Утіліти */
+/* Утиліти */
 h1,
 h2,
 h3,
@@ -95,6 +95,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+.contact-list .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .site-nav {
   display: flex;
   align-items: center;
@@ -114,7 +119,7 @@ body {
 .list.contact-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 .contact {
   color: var(--text-color);
@@ -172,6 +177,19 @@ body {
 }
 
 /* Our qualities section */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .section.qua {
   padding: 120px 0;
@@ -203,7 +221,6 @@ body {
 }
 /* What are we doing */
 .section.doing {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 .list.doing {
@@ -274,6 +291,7 @@ body {
 footer .logo.link {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 /* Стилі Portfolio */
 .section .work-button {
@@ -283,8 +301,8 @@ footer .logo.link {
   border-radius: 4px;
   cursor: pointer;
   padding: 12px 24px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
 
   font-family: inherit;
   font-weight: 500;
@@ -313,7 +331,6 @@ footer .logo.link {
   justify-content: center;
   gap: 24px;
 
-  /* padding-top: 96px; */
   margin-bottom: 72px;
 }
 .section.portfol {
@@ -324,20 +341,17 @@ footer .logo.link {
 .list.examples {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .work-container {
   padding: 32px 16px;
-  /* padding-top: 32px;
-
-  padding-bottom: 32px;
-  padding-left: 16px; */
   border: 1px solid var(--hairlines-button-color);
   border-top: none;
 }
 .item-work {
-  width: 360px;
-  margin-right: 24px;
-  margin-bottom: 48px;
+  /* margin-right: 24px;
+  margin-bottom: 48px; */
   width: calc((100% - 48px) / 3);
 }
 .item-work:nth-child(3n) {
